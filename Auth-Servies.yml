@@ -1,11 +1,11 @@
 server:
   port: 8081
+
 spring:
   datasource:
-    password: root
     url: jdbc:mysql://localhost:3306/Ecommers
     username: root
-    management:
+    password: root
   endpoints:
     web:
       exposure:
@@ -14,14 +14,14 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
-    boot:
+  boot:
     admin:
       client:
-        url:http://localhost:1111/
+        url: http://localhost:1111/
 
 auth-servies:
   messages:
-   userReg:"User created"
-   userRegErr:"User creation faild"
-   login:"Login sucesss"
-   loginErr:"Invalid details please check user name and passd"      
+    userReg: "User created"
+    userRegErr: "User creation failed"
+    login: "Login success"
+    loginErr: "Invalid details please check username and password"
