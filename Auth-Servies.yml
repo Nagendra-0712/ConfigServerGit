@@ -18,4 +18,10 @@ spring:
     admin:
       client:
         url:http://localhost:1111/
-        
+
+Auth-Servies:
+  messages:
+   userReg:"User created"
+   userRegErr:"User creation faild"
+   login:"Login sucesss"
+   loginErr:"Invalid details please check user name and passd"      
